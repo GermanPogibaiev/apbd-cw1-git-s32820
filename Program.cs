@@ -11,6 +11,7 @@ class Program
 
         Console.WriteLine("Average: " + StatisticsHelper.CalculateAverage(values));
         Console.WriteLine("Max: " + StatisticsHelper.CalculateMax(values));
+        Console.WriteLine("Min: " + StatisticsHelper.CalculateMin(values));
     }
 
     static int[] ReadValuesFromUser()
