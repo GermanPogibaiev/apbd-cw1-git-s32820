@@ -7,6 +7,7 @@ class Program
         Console.WriteLine("Statistics application");
 
         int[] values = ReadValuesFromUser();
+        StatisticsHelper.ValidateInput(values);
 
         Console.WriteLine("Numbers loaded: " + values.Length);
     }
