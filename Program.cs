@@ -10,6 +10,7 @@ class Program
         StatisticsHelper.ValidateInput(values);
 
         Console.WriteLine("Average: " + StatisticsHelper.CalculateAverage(values));
+        Console.WriteLine("Max: " + StatisticsHelper.CalculateMax(values));
     }
 
     static int[] ReadValuesFromUser()
