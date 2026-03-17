@@ -9,7 +9,7 @@ class Program
         int[] values = ReadValuesFromUser();
         StatisticsHelper.ValidateInput(values);
 
-        Console.WriteLine("Numbers loaded: " + values.Length);
+        Console.WriteLine("Average: " + StatisticsHelper.CalculateAverage(values));
     }
 
     static int[] ReadValuesFromUser()
