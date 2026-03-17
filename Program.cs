@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Statistics application");
+        Console.WriteLine("Statistics application - final version");
 
         int[] values = ReadValuesFromUser();
         StatisticsHelper.ValidateInput(values);
