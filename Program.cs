@@ -19,6 +19,7 @@ class Program
 
         if (string.IsNullOrWhiteSpace(input))
         {
+            Console.WriteLine("Input cannot be empty. Default values will be used.");
             return new int[] { 4, 8, 15, 16, 23, 42 };
         }
 
@@ -27,7 +28,13 @@ class Program
 
         for (int i = 0; i < parts.Length; i++)
         {
-            values[i] = int.Parse(parts[i]);
+            bool success = int.TryParse(parts[i], out values[i]);
+
+            if (!success)
+            {
+                Console.WriteLine("Invalid value detected. Default values will be used.");
+                return new int[] { 4, 8, 15, 16, 23, 42 };
+            }
         }
 
         return values;
