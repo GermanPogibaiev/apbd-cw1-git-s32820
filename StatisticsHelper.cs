@@ -32,6 +32,7 @@ public static class StatisticsHelper
 
         return max;
     }
+       
 
     public static void ValidateInput(int[] values)
     {
@@ -39,5 +40,9 @@ public static class StatisticsHelper
         {
             throw new ArgumentException("Array cannot be null or empty.");
         }
+    }
+    public static int CalculateMin(int[] values)  {
+    ValidateInput(values);
+    return 0;
     }
 }
