@@ -16,6 +16,23 @@ public static class StatisticsHelper
         return (double)sum / values.Length;
     }
 
+    public static int CalculateMax(int[] values)
+    {
+        ValidateInput(values);
+
+        int max = values[0];
+
+        for (int i = 1; i < values.Length; i++)
+        {
+            if (values[i] > max)
+            {
+                max = values[i];
+            }
+        }
+
+        return max;
+    }
+
     public static void ValidateInput(int[] values)
     {
         if (values == null || values.Length == 0)
